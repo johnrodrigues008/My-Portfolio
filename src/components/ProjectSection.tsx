@@ -2,24 +2,25 @@ import { projects } from "@/data/projectData";
 
 import Image from "next/image";
 import { CustomLink } from "./CustomLink";
+import { Heading } from "./Heading";
 
 export function ProjectSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
-      <div>
-        <p className="font-title tracking-wide text-4xl uppercase">Projetos</p>
-        <p className="text-zinc-400">Meus melhores projetos</p>
+    <section id="project" className="scroll-mt-28">
+      <Heading title="Projetos" description="Meus melhores projetos"></Heading>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => {
-            return <ProjectCard key={project.title} project={project} />;
-          })}
-        </div>
-        <div className="mt-10 flex justify-center">
-          <CustomLink href="https://github.com/johnrodrigues008/" linkType="secondary">
-            Ver todos os projetos
-          </CustomLink>
-        </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project) => {
+          return <ProjectCard key={project.title} project={project} />;
+        })}
+      </div>
+      <div className="mt-10 flex justify-center">
+        <CustomLink
+          href="https://github.com/johnrodrigues008/"
+          linkType="secondary"
+        >
+          Ver todos os projetos
+        </CustomLink>
       </div>
     </section>
   );

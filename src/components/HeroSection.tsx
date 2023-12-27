@@ -6,7 +6,7 @@ import ImagemLogo from "../../public/Foto.png";
 
 export function HeroSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+    <section id="home">
       <div className="grid md:grid-cols-2 items-center h-[calc(100vh-70px)] max-h-[678px] bg-red">
         <div>
           <p className="text-lg mb-1">Olá 👋, Eu sou</p>

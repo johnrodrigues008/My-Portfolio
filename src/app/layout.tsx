@@ -5,6 +5,7 @@ import { cn } from '@/utils/helper'
 
 /* Import components */
 import { Navigation } from "../components/Navigation";
+import { FooterSection } from '@/components/FooterSection';
 
 const roboto = Roboto({ 
   weight: ["300", "400", "700"],
@@ -30,10 +31,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={cn(roboto.className, bebas.variable, "bg-zinc-900 text-zinc-50 ") }>
-        <Navigation />  
-        {children}
+      <body
+        className={cn(
+          roboto.className,
+          bebas.variable,
+          "bg-zinc-900 text-zinc-50 "
+        )}
+      >
+        <Navigation />
+
+        <main className="max-w-7xl mx-auto px-4 md:px-8 space-y-28">
+          {children}
+        </main>
+
+        <FooterSection />
       </body>
     </html>
-  )
+  );
 }
