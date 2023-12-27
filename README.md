@@ -29,3 +29,7 @@ Outras tecnologias serão utilzadas no projeto, a ideia é fazer um misto de tec
 * E-mail principa: [john.rodrigues008@gmail.com](john.rodrigues008@gmail.com)
 * Telefone/Whatsapp: +55 61 991803216
 * Discord: johnrodrigues_96670
+
+
+Parei em 29:40 / 1:19:29
+

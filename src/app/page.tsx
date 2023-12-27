@@ -1,5 +1,11 @@
-import Image from 'next/image'
+import { HeroSection } from '@/components/HeroSection';
+import { ProjectSection } from '@/components/ProjectSection'
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underlin">Hello world!</h1>;
+  return (
+    <>
+      <HeroSection />
+      <ProjectSection />
+    </>
+  );
 }
