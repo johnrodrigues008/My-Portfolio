@@ -1,35 +1,50 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import { CustomLink } from "./CustomLink";
 
-import ImagemLogo from "../../public/Foto.png";
+import ImagemLogo from "../../public/Banner img.png";
+import IconLinkedin from "../../public/icon/linkedin.svg";
 
 export function HeroSection() {
   return (
-    <section id="home">
-      <div className="grid md:grid-cols-2 items-center h-[calc(100vh-70px)] max-h-[678px] bg-red">
-        <div>
-          <p className="text-lg mb-1">Olá 👋, Eu sou</p>
-          <h1 className="font-title tracking-wider text-3xl sm:text-6xl -ml-0.5">
-            Desenvolvedor Full Stack
+    <section id="home" className="mb-10 lg:pb-0 ">
+
+      <div className="container flex flex-col content-between justify-center items-center Roboto-400">
+
+        <div className="h-[calc(100vh-320px)] sm:h-[calc(80vh-300px)] lg:h-[calc(80vh-120px)] ">
+          <h1 className="text-4xl flex justify-between items-center h-[100%] tracking-wider ml-0.5 text-center Ubuntu-400 lg:text-[70px]">
+            John Rodrigues
           </h1>
-          <p className="text-zinc-300 mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptatum, aliquid odio. At ea officia laborum fuga molestias
-            aliquid ipsa rem, molestiae voluptatibus vitae numquam, architecto,
-            sit tenetur soluta voluptas sunt!
-          </p>
-          <CustomLink className="mt-4" href="#project" linkType="primary">
-            Meus trabalhos
-          </CustomLink>
         </div>
-        <div className="hidden md:flex w-full h-full relative overflow-hidden">
-          <Image
-            className="object-cover object-top w-full h-full self-end"
-            src={ImagemLogo}
-            alt="Imagem do john"
-          />
-          <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-zinc-900 to-transparent"></div>
+
+        <div className="w-full sm:flex sm:items-center sm:justify-between lg:flex lg:items-center lg:justify-between">
+          <div className=" ">
+            <h2 className="text-[16px]">
+              Developer | SEO Analyst | Programmer
+            </h2>
+            <p className="max-w-[528px] text-zinc-300 mt-2 text-[14px]">
+              Olá! Meu nome é John Rodrigues e sou um desenvolvedor apaixonado
+              por tecnologia e inovação. Com 24 anos de idade e morador de uma
+              das regionais administrativas do Distrito Federal, venho dedicando
+              minha carreira à criação de soluções digitais incríveis.
+            </p>
+          </div>
+
+          <div className="mt-5">
+            <Link
+              href="https://www.linkedin.com/in/johnrodrigues009/"
+              className="Ubuntu-400 flex justify-center items-center"
+            >
+              <p className="m-0 p-0">Linkedin</p>
+
+              <Image
+                className="w-[40px] h-[40px] ml-[13px]"
+                src={IconLinkedin}
+                alt="Icone do linkedin"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

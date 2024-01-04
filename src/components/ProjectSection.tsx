@@ -17,7 +17,7 @@ export function ProjectSection() {
       <div className="mt-10 flex justify-center">
         <CustomLink
           href="https://github.com/johnrodrigues008/"
-          linkType="secondary"
+          linkType="primary"
         >
           Ver todos os projetos
         </CustomLink>
@@ -33,7 +33,7 @@ interface IprojectCard {
 function ProjectCard({ project }: IprojectCard) {
   return (
     <div className="bg-zinc-800/50 border border-zinc-800 rounded-lg overflow-hidden">
-      <div>
+      <div className="h-[200px]">
         <Image
           className="w-full h-full object-cover"
           src={project.image}
@@ -44,7 +44,7 @@ function ProjectCard({ project }: IprojectCard) {
       </div>
 
       <div className="p-4">
-        <ul className="flex gap-4 mb-2">
+        <ul className="flex justify-center items-center gap-4 mb-2">
           {project.stacks.map((stack) => {
             return (
               <li
@@ -56,17 +56,20 @@ function ProjectCard({ project }: IprojectCard) {
             );
           })}
         </ul>
+
         <p className="text-lg font-medium">{project.title}</p>
         <p className="text-zinc-400">{project.description}</p>
-        <div className="flex gap-4 mt-4">
-          <CustomLink href={project.sourceCode} linkType="secondary">
+
+        <div className="gap-4 mt-4 flex justify-center items-center">
+          <CustomLink href={project.sourceCode} linkType="primary">
             Código fonte
           </CustomLink>
 
-          <CustomLink href={project.liveAt} linkType="secondary">
+          <CustomLink href={project.liveAt} linkType="primary">
             Ver agora
           </CustomLink>
         </div>
+        
       </div>
     </div>
   );
