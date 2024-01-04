@@ -55,7 +55,7 @@ export function Navigation(){
               const isLastElement = index === navMenuList.length - 1;
               return (
                 <li
-                  className="mb-5 text-[27px] pb-3 border-b-[1px]  w-[500px] text-[#fff] Roboto-100"
+                  className="mb-5 text-[27px] pb-3 border-b-[1px] text-[#fff] Roboto-100 w-[70%] sm:w-[500px]"
                   key={href}
                 >
                   <CustomLink

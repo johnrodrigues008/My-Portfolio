@@ -11,7 +11,8 @@ interface IProps extends LinkProps{
 const styled = {
   baseStyled: "px-6 py-2 rounded-full inline-block text-sm cursor-pointer",
   primary: "bg-zinc-100 text-zinc-900",
-  secondary: "text-white ",
+  secondary:
+    "text-white Rototo-400 bg-[#262626] shadow-[0px 4px 4px 0px rgba(0, 0, 0, 0.25)]",
   link: "text-white ",
   none: "px-0",
 };

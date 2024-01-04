@@ -61,11 +61,11 @@ function ProjectCard({ project }: IprojectCard) {
         <p className="text-zinc-400">{project.description}</p>
 
         <div className="gap-4 mt-4 flex justify-center items-center">
-          <CustomLink href={project.sourceCode} linkType="primary">
+          <CustomLink href={project.sourceCode} linkType="secondary">
             Código fonte
           </CustomLink>
 
-          <CustomLink href={project.liveAt} linkType="primary">
+          <CustomLink href={project.liveAt} linkType="secondary">
             Ver agora
           </CustomLink>
         </div>

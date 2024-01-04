@@ -16,7 +16,7 @@ export function AboutSection() {
         />
 
         <div className="flex gap-4 flex-col md:flex-row items-center pb-10">
-          <div className="w-[300px] shrink-0rounded-md overflow-hidden rounded-[50%] lg:w-[600px]">
+          <div className="w-[300px] bg-cover shrink-0rounded-md overflow-hidden rounded-[50%] sm:mr-5 sm:w-[500px]">
             <Image
               src={aboutImage}
               alt="Logo da seção sobre de John Rodrigues"
