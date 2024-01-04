@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { CustomLink } from "./CustomLink";
-
-import ImagemLogo from "../../public/Banner img.png";
 import IconLinkedin from "../../public/icon/linkedin.svg";
 
 export function HeroSection() {

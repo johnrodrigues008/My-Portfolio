@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Heading } from "./Heading";
-import aboutImage from "../../public/img/aboutImage.png";
+import aboutImage from "../../public/img/about/about-image.png";
 import { socialLinks } from "@/data/socialLinks";
 import { CustomLink } from "./CustomLink";
 

@@ -1,4 +1,4 @@
-import cadapioImage from "../../public/projects/cardapioImagem.jpg";
+import cadapioImage from "../../public/img/projects/cardapioImagem.jpg";
 
 export const projects = [
   {
