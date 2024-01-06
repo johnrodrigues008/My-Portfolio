@@ -1,8 +1,8 @@
 import { projects } from "@/data/projectData";
 
 import Image from "next/image";
-import { CustomLink } from "./CustomLink";
-import { Heading } from "./Heading";
+import { CustomLink } from "../CustomLink";
+import { Heading } from "../Heading";
 
 export function ProjectSection() {
   return (

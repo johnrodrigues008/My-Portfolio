@@ -1,7 +1,7 @@
 "use client"
 
 import { navMenuList } from "@/data/NavigationData";
-import { CustomLink } from "./CustomLink";
+import { CustomLink } from "../CustomLink";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { MdOutlineClose } from "react-icons/md";
@@ -10,17 +10,15 @@ import { cn } from "@/utils/helper";
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "../../public/logo.svg"
+import Logo from "../../../public/logo.svg"
 
-export function Navigation(){
+export function NavigationSection() {
+  const [isNavOpen, setNavOpen] = useState(false);
 
-      const [isNavOpen, setNavOpen] = useState(false);
-
-      useEffect(() => {
-            const overflowValue = isNavOpen ? "hidden" : "auto"
-            document.body.style.overflow = overflowValue;
-      }, [isNavOpen]);
-
+  useEffect(() => {
+    const overflowValue = isNavOpen ? "hidden" : "auto";
+    document.body.style.overflow = overflowValue;
+  }, [isNavOpen]);
 
   return (
     <nav className="py-4 border-b border-zinc-800 shadow-md sticky top-0 z-10 bg-zinc-900/20 backdrop-blur-md">

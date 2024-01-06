@@ -8,15 +8,15 @@ export const navMenuList = [
     href: "#about",
   },
   {
-    title: "Projetos",
-    href: "#project",
-  },
-  {
     title: "Skills",
     href: "#skills",
   },
   {
-    title: "Contato",
-    href: "#contact",
+    title: "Trajetória",
+    href: "#trajectory",
+  },
+  {
+    title: "Projetos",
+    href: "#project",
   },
 ];

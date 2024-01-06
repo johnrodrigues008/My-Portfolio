@@ -1,7 +1,8 @@
-import { HeroSection } from '@/components/HeroSection';
-import { ProjectSection } from '@/components/ProjectSection'
-import { SkillsSection } from "@/components/SkillsSection";
-import { AboutSection } from '@/components/AboutSection';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { ProjectSection } from "@/components/sections/ProjectSection";
+import { SkillsSection } from "@/components/sections/SkillsSection";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { TrajectorySection } from "@/components/sections/TrajectorySection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <TrajectorySection />
       <ProjectSection />
     </>
   );

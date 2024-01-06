@@ -3,8 +3,8 @@ import './globals.css'
 import { cn } from '@/utils/helper'
 
 /* Import components */
-import { Navigation } from "../components/Navigation";
-import { FooterSection } from '@/components/FooterSection';
+import { NavigationSection } from "../components/sections/NavigationSection";
+import { FooterSection } from '@/components/sections/FooterSection';
 
 
 export const metadata: Metadata = {
@@ -20,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="bg-zinc-900 text-zinc-50 ">
-        <Navigation />
+        <NavigationSection />
 
-        <main className="max-w-7xl mx-auto px-4 md:px-8">
-          {children}
-        </main>
+        <main className="max-w-7xl mx-auto px-4 md:px-8">{children}</main>
 
         <FooterSection />
       </body>

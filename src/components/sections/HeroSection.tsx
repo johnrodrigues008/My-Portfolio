@@ -1,19 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import IconLinkedin from "../../public/icon/linkedin.svg";
+import IconLinkedin from "../../../public/icon/linkedin.svg";
 
 export function HeroSection() {
   return (
-    <section id="home" className="mb-10 lg:pb-0 ">
-      <div className="container flex flex-col content-between justify-center items-center Roboto-400">
-        <div className="h-[calc(100vh-320px)] sm:h-[calc(80vh-300px)] lg:h-[calc(80vh-120px)] ">
+    <section
+      id="home"
+      className="mb-10 lg:pb-0 flex justify-center scroll-mt-28"
+    >
+      <div className="w-full flex flex-col content-between justify-center items-center Roboto-400">
+        <div className="w-full flex justify-center h-[calc(100vh-320px)] sm:h-[calc(80vh-300px)] lg:h-[calc(80vh-120px)] ">
           <h1 className="text-4xl flex justify-between items-center h-[100%] tracking-wider ml-0.5 text-center Ubuntu-400 lg:text-[70px]">
             John Rodrigues
           </h1>
         </div>
 
-        <div className="w-full sm:flex sm:items-center sm:justify-between lg:flex lg:items-center lg:justify-between">
+        <div className="w-full flex flex-col justify-center sm:flex-row sm:justify-between">
           <div className=" ">
             <h2 className="text-[16px] text-center sm:text-start">
               SEO Analyst & Full Stack Developer
@@ -26,7 +29,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="mt-5">
+          <div className="mt-5 sm:mt-0 sm:flex">
             <Link
               href="https://www.linkedin.com/in/johnrodrigues009/"
               className="Ubuntu-400 flex justify-center items-center"

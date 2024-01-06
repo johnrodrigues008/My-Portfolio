@@ -1,10 +1,10 @@
 import { skills } from "@/data/skillsData";
-import { Heading } from "./Heading";
+import { Heading } from "../Heading";
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="mb-10">
-      <div className="container">
+    <section id="skills" className="mb-10 scroll-mt-28">
+      <div>
         <Heading title="Skills" description="Minhas habilidades são:" />
 
         <div className="pb-10">
