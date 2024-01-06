@@ -19,4 +19,8 @@ export const navMenuList = [
     title: "Projetos",
     href: "#project",
   },
+    {
+    title: "Contato",
+    href: "#contact",
+  },
 ];

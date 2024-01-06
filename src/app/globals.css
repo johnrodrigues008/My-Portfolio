@@ -31,6 +31,12 @@
       src: url('../../public/fonts/Ubuntu-400.woff2');
 }
 
+@font-face {
+      font-family: 'Ubuntu-700';
+      src: url('../../public/fonts/Ubuntu-700.woff2');
+}
+
+
 /* Class fonts */
 
 /* ----> Roboto */
