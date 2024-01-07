@@ -9,14 +9,14 @@ export const university_education = [
       {
             name: "Ciências da Computação",
             institution: "Universidade Estácio de Sá",
-            status: "6° Periodo",
+            status: "6° Periodo - Em andamento",
             degree_type: "Graduação",
             end_date: "Junho/2025"
       },
       {
             name: "Processos Gerenciais",
             institution: "Universidade Estácio de Sá",
-            status: "6° Periodo",
+            status: "Concluido",
             degree_type: "Graduação",
             end_date: "Junho/2022"
       }
